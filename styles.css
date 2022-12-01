@@ -1,0 +1,13 @@
+.navbar {
+    background-color:#2C2B3C;
+}
+
+.navbar-menu-list {
+    list-style: none;
+}
+
+.logomark {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
