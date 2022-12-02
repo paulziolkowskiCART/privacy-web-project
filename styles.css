@@ -11,9 +11,12 @@
 }
 
 .logomark {
-    text-align: center;
+    text-align:center;
     font-size: 30px;
     color: white;
+    justify-content: center;
+    display: flex;
+    align-self: center;
 }
 
 .topHead {
@@ -37,4 +40,9 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+   
+    margin-left: 250px;
+    margin-right: 250px;
+    
+
 } 
