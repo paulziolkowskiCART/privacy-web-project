@@ -19,6 +19,10 @@
     align-self: center;
 }
 
+.logomark > a {
+    text-decoration: none;
+}
+
 .topHead {
     display: flex;
     justify-content: center;
@@ -26,6 +30,10 @@
 
 .navbar-menu-list-item {
     padding: 7px;
+}
+
+.navbar-menu-list > a {
+    text-decoration:none;
 }
 
 .navbar-menu-list-item ::after {
@@ -74,7 +82,7 @@ h3 {
 
 footer {
     background-color: #2C2B3C;
-    /* display: flex; */
+    display:flex;
 }
 
 .foot-list {
@@ -84,8 +92,20 @@ footer {
     color: white;
     list-style: none;
     margin: 50px;
-    width: 10vh;
+    width: 70%;
     max-width: max-content;
+}
+.footer-img {
+    margin-right:10%;
+    margin-left:10%;
+}
+.footer-list > a {
+    text-decoration:none;
+    list-style:none;
+}
+
+.footer-list > li {
+    justify-content:space-between;
 }
 
 ul {
