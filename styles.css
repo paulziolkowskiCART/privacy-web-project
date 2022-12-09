@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,400;0,600;1,400&display=swap');
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body{
 font-family: "Rubik", sans-serif;
 }
@@ -24,7 +32,7 @@ font-family: "Rubik", sans-serif;
     justify-content: center;
     display: flex;
     align-self: center;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .logomark > a {
@@ -34,7 +42,11 @@ font-family: "Rubik", sans-serif;
 .topHead {
     display: flex;
     justify-content: center;
+    gap: 0.5rem;
+   padding: 1rem 0;
 }
+
+
 
 .navbar-menu-list-item {
     padding: 7px;
@@ -52,12 +64,15 @@ font-family: "Rubik", sans-serif;
     background-color: white;
 }
 
+
+
 a {
     color:white
 }
 
 h3 {
     font-size: 40px;
+    margin-bottom: 0.5em;
 }
 
 .Info {
@@ -74,7 +89,7 @@ h3 {
 
 .heroImage {
     background-image: url("images/aboutusheroimg.jpg");
-    height:50%;
+    height:30%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -100,9 +115,9 @@ h3 {
 
 footer{
 width: 100%;
-background-color: black;
+background-color: #2C2B3C;
 margin: 0 auto;
-padding: 1rem 0;
+padding: 1.5rem 0;
 }
 
 .footer-content{
@@ -120,7 +135,6 @@ padding: 1rem 0;
     align-items: center;
     color:white;
     list-style: none;
-
 }
 
 .footer-content-list-item a{
@@ -130,7 +144,7 @@ text-decoration: none;
 .heroImage{
     background-image: url(/images/aboutusheroimg.jpg);
     width: 100%;
-    height: 80vh;
+    height: 70vh;
 }
 
 .footer-content-list-item a:hover,
