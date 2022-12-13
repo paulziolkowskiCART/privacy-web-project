@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,400;0,600;1,400&display=swap');
 
+:root {
+    --header-foreground: #fff;
+    --header-background: #2c2b3c;
+    --foreground-default: #121420;
+    --background-default: #fff;
+    --accent-color: #c94949;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +15,51 @@
 }
 
 body {
-    font-family: "Rubik", sans-serif;
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.55;
+    /* letter-spacing: -0.01em; */
+    color: var(--foreground-default);
+    background-color: var(--background-default);
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* Flexbox */
+.flex {
+    display: flex;
+}
+
+.center-justify {
+    justify-content: center;
+}
+
+.center-align {
+    align-items: center;
+}
+
+.column-flex,
+.col-flex {
+    flex-direction: column;
+}
+
+/* Containers */
+.container {
+    --container-width: 90%;
+    --container-min-width: 0;
+    --container-max-width: 1408px;
+    width: var(--container-width);
+    min-width: var(--container-min-width);
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+}
+
+.container ul,
+.container ol {
+    list-style: disc;
 }
 
 .navbar {
