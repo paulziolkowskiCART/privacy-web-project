@@ -1,5 +1,6 @@
 :root {
     --header-foreground: #fff;
+    --header-foreground-rgb: 255, 255, 255;
     --header-background: #2c2b3c;
     --foreground-default: #121420;
     --background-default: #fff;
@@ -61,6 +62,27 @@ footer {
     flex-direction: column;
 }
 
+.table {
+    display: table;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+    border: 1px solid rgba(var(--header-foreground-rgb), 0.2);
+}
+
+.collapse-border {
+    border-collapse: collapse;
+}
+
+.hidden-border {
+    border-style: hidden;
+}
+
 .container {
     --container-width: 90%;
     --container-min-width: 0;
@@ -80,8 +102,43 @@ footer {
     list-style: disc;
 }
 
-.navbar {
-    background-color: #2C2B3C;
+.header-content {
+    gap: 1rem;
+}
+
+.logo-eye {
+    stroke: var(--header-foreground);
+}
+
+.logo-iris {
+    fill: var(--header-foreground);
+}
+
+.logo-pupil {
+    fill: var(--accent-color);
+}
+
+@media screen and (max-width: 829px) {
+    .header-content {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 529px) {
+    .header-content {
+        align-items: normal;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        display: none;
+    }
 }
 
 .navbar-menu-list {
