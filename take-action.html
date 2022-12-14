@@ -5,74 +5,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Fighting For Privacy</title>
     <style>
-        .heroImage {
-            background-image: url(images/take-action.jpg);
+        .hero {
+            --hero-img-url: url('/images/take-action.jpg');
         }
     </style>
+    <title>Take Action &mdash; Fighting For Digital Privacy</title>
 </head>
 
 <body>
-    <header>
+    <div class="header-wrapper">
+        <header>
+            <div class="container flex center-justify">
+                <a href="/" id="header-content" class="header-content flex center-align">
+                    <svg class="logo" width="72" height="72" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g class="logo-eye" stroke-width="3">
+                            <path d="M59.7 37C40 37 25 52 20 59.5C25 67 40 82 59.7 82C79.4 82 95 67 100 59.5C95 52 80 37 59.7 37Z" />
+                            <path d="M110 60C110 87.6142 87.6142 110 60 110C32.3858 110 10 87.6142 10 60C10 32.3858 32.3858 10 60 10C87.6142 10 110 32.3858 110 60Z" />
+                        </g>
+                        <g class="logo-iris" fill-rule="evenodd" clip-rule="evenodd">
+                            <path d="M74.0277 65.6019C76.5962 62.4722 78 58.5487 78 54.5L69 54.5C69 59.1945 65.1944 63 60.5 63C55.8056 63 52 59.1945 52 54.5C52 49.8056 55.8056 46 60.5 46C62.8472 46 64.9722 46.9514 66.5104 48.4896L72.8744 42.1257C70.0115 39.2628 66.2445 37.4811 62.2153 37.0843C58.1861 36.6875 54.1439 37.7 50.7775 39.9493C47.4111 42.1987 44.9288 45.5457 43.7535 49.42C42.5783 53.2944 42.7827 57.4565 44.3321 61.197C45.8815 64.9375 48.6799 68.0251 52.2506 69.9337C55.8212 71.8422 59.9432 72.4536 63.9141 71.6638C67.885 70.8739 71.4592 68.7316 74.0277 65.6019Z" />
+                        </g>
+                        <circle class="logo-pupil" cx="60.5" cy="54.5" r="8.5" />
+                    </svg>
+                    <span class="wordmark">Fighting For Digital Privacy</span>
+                </a>
+            </div>
+        </header>
         <div class="navbar">
-            <div class="navbar-container">
-                <div class="topHead">
-                    <a href="index.html"><img src="images/logo.svg" alt="Logo"></a>
-                    <span class="logomark">
-                        <a href="index.html"><em>Fighting For Digital Privacy</em></a>
-                    </span>
-                </div>
-                <div class="navbar-menu">
-                    <ul class="navbar-menu-list">
-                        <a href="the-problem.html">
-                            <li class="navbar-menu-list-item">
-                                The Problem</li>
-                        </a>
-                        <a href="take-action.html">
-                            <li class="navbar-menu-list-item">Take Action</li>
-                        </a>
-                        <a href="best-practices.html">
-                            <li class="navbar-menu-list-item">Best Practices</li>
-                        </a>
-                    </ul>
-                </div>
+            <div class="container flex center-justify">
+                <ul id="navbar-content" class="navbar-content flex">
+                    <li class="navbar-item"><a href="/">About</a></li>
+                    <li class="navbar-item"><a href="/the-problem.html">The Problem</a></li>
+                    <li class="navbar-item"><a href="/take-action.html">Take Action</a></li>
+                </ul>
             </div>
         </div>
-        <div class="heroImage">
+        <div class="hero flex center-align">
+            <div class="hero-container">
+                <h1>Take Action</h1>
+            </div>
         </div>
-        <div class="Inf0">
-            <h3>Take Action</h3>
-            <p>
-                The best way to take action against surveillance and other means of violating user privacy, is to stop
-                and reflect. Determine who or what the user is trying to protect their privacy from? This will help
-                build their privacy threat model. Knowing this will help further benefit, improve, and protect their
-                digital privacy.<br><br>
-                Once one has established their threat model, they must determine how to combat surveillance and data
-                collection. One way is to simply stop using online services that violate their user’s privacy. One way
-                to check this is to read the service’s privacy policy. This will inform the user what the service
-                collects and shares in terms of personal data. Another way is to limit providing any personal
-                information to online services the user doesn’t trust. Other ways may depend on the user’s threat model.
-            </p>
+    </div>
+    <div class="article">
+        <div class="container">
+            <div class="content">
+                <p>Now that you are aware of third-parties misusing personal information for their financial gain, it is important to take action against the breach of your privacy. There are many ways to improve and protect your privacy and security.</p>
+                <h2>Seek Alternatives</h2>
+                <p>To further protect your privacy, you should consider privacy-respecting alternatives to online services that do not respect user privacy. For example, companies like Meta, Snapchat, and Google dominate in online communications and chat. They do not respect their users’ privacy as outlined in their privacy policies and practices. As you may know, they may collect information about you and what you send to others, as well as what you receive from others. For this, an alternative is recommended. Privacy-respecting services like Signal offer better alternatives to services provided by companies that do not respect user privacy. This all depends, however, on your threat model.</p>
+                <h2>Limit Your Use of Online Services</h2>
+                <p>You may also want to discourage and limit use of any online services that do not respect your privacy or you don't use, and that, too, depends on your threat model. You must find what best suits you for your digital privacy and stick to it. For example, you may prefer more convenience at the cost of less privacy. With all that in mind, the best practices to combat surveillance and breach of privacy all come down to the user, their preferences, and threat model.</p>
+                <p></p>
+            </div>
         </div>
-    </header>
+    </div>
     <footer>
-        <div class="footer-content">
-            <ul class="footer-content-list">
-                <li class="footer-content-list-item">
-                    <a href="index.html"><img class="footer-img" src="./images/logo.svg" alt="logo"></a>
-                </li>
-                <li class="footer-content-list-item">
-                    <a href="the-problem.html">The Problem</a>
-                </li>
-                <li class="footer-content-list-item">
-                    <a href="take-action.html">Take Action</a>
-                </li>
-                <li class="footer-content-list-item">
-                    <a href="best-practices.html">Best Practices</a>
-                </li>
-            </ul>
+        <div class="container flex column center-justify">
+            <div id="footer-content" class="footer-content">
+                <div class="footer-nav-content flex center-justify center-align">
+                    <svg class="logo" width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g class="logo-eye" stroke-width="3">
+                            <path d="M59.7 37C40 37 25 52 20 59.5C25 67 40 82 59.7 82C79.4 82 95 67 100 59.5C95 52 80 37 59.7 37Z" />
+                            <path d="M110 60C110 87.6142 87.6142 110 60 110C32.3858 110 10 87.6142 10 60C10 32.3858 32.3858 10 60 10C87.6142 10 110 32.3858 110 60Z" />
+                        </g>
+                        <g class="logo-iris" fill-rule="evenodd" clip-rule="evenodd">
+                            <path d="M74.0277 65.6019C76.5962 62.4722 78 58.5487 78 54.5L69 54.5C69 59.1945 65.1944 63 60.5 63C55.8056 63 52 59.1945 52 54.5C52 49.8056 55.8056 46 60.5 46C62.8472 46 64.9722 46.9514 66.5104 48.4896L72.8744 42.1257C70.0115 39.2628 66.2445 37.4811 62.2153 37.0843C58.1861 36.6875 54.1439 37.7 50.7775 39.9493C47.4111 42.1987 44.9288 45.5457 43.7535 49.42C42.5783 53.2944 42.7827 57.4565 44.3321 61.197C45.8815 64.9375 48.6799 68.0251 52.2506 69.9337C55.8212 71.8422 59.9432 72.4536 63.9141 71.6638C67.885 70.8739 71.4592 68.7316 74.0277 65.6019Z" />
+                        </g>
+                        <circle class="logo-pupil" cx="60.5" cy="54.5" r="8.5" />
+                    </svg>
+                    <ul class="footer-nav">
+                        <li class="footer-nav-item"><a href="/">About</a></li>
+                        <li class="footer-nav-item"><a href="/the-problem.html">The Problem</a></li>
+                        <li class="footer-nav-item"><a href="/take-action.html">Take Action</a></li>
+                    </ul>
+                </div>
+                <div id="copyright" class="copyright">&copy; 2022 <span class="accent-muted">Paul Ziolkowski</span></div>
+            </div>
         </div>
     </footer>
 </body>

@@ -25,10 +25,14 @@ body {
     accent-color: var(--accent-color);
 }
 
-h1 {
+h1,
+h2 {
     font-family: 'Rubik Mono One', sans-serif;
-    font-size: 80px;
     font-weight: normal;
+}
+
+h1 {
+    font-size: 80px;
 }
 
 a {
@@ -81,7 +85,7 @@ footer {
 .container {
     --container-width: 90%;
     --container-min-width: 0;
-    --container-max-width: 1408px;
+    --container-max-width: 960px;
     width: var(--container-width);
     min-width: var(--container-min-width);
     max-width: var(--container-max-width);
@@ -93,12 +97,22 @@ footer {
     line-height: 1.55;
 }
 
+.content h2 {
+    margin: 1em 0 0.333em 0;
+}
+
 .content a {
+    color: var(--accent-color);
     text-decoration: underline;
+}
+
+.content a:visited {
+    color: var(--accent-color-muted);
 }
 
 .content ul,
 .content ol {
+    padding-inline-start: 1em;
     list-style: disc;
 }
 
@@ -161,6 +175,11 @@ footer {
 
 .hero-container {
     margin-left: 80px;
+}
+
+.article {
+    color: var(--foreground-default);
+    padding: 80px 0;
 }
 
 .footer-nav-content {
